@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Accessible Accordion</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Accessible Accordion</h1>
+      <h2 id="nav-label" class="label">Main Navigation</h2>
+      <nav role="navigation" aria-labeledby="nav-label">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Second</a></li>
+          <li><a href="#">Third</a></li>
+          <li><a href="#">Forth</a></li>
+          <li><a href="#">Fif</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main" role="main">
+      <dl id="myAccordion" class="js-accordion accordion" role="tablist" aria-multiselectable="true">
+        <dt id="title1" role="tab" aria-controls="panel1" aria-selected="true" aria-expanded="true" tabindex=0>Veggies sunt bona vobis</dt>
+        <dd id="panel1" role="tabpanel" aria-labelledby="title1" aria-hidden="false">
+          <p id="p-bona">Veggies sunt <a href="#" id="bona">#bona vobis</a>, proinde vos postulo esse magis earthnut pea kohlrabi watercress epazote yarrow amaranth lettuce tatsoi pea sprouts celery salsify bell pepper sierra leone bologi peanut eggplant salad.</p>
+        </dd>
+        <dt id="title2" role="tab" aria-controls="panel2" aria-selected="true" aria-expanded="true" tabindex=-1>Coriander bitterleaf</dt>
+        <dd id="panel2" role="tabpanel" aria-labelledby="title2" aria-hidden="false">
+          <p>Coriander bitterleaf epazote tigernut grape catsear bunya nuts swiss chard aubergine. Quandong broccoli earthnut pea sweet pepper beetroot beet greens welsh onion chickpea artichoke pea sprouts kombu cress arugula. Zucchini kale water spinach pea sprouts spinach quandong lotus root collard greens radicchio chickweed brussels sprout gourd gram bell pepper fava bean komatsuna.</p>
+        </dd>
+        <dt id="title3" role="tab" aria-controls="panel3" aria-selected="true" aria-expanded="true" tabindex=-1>Coriander bitterleaf again</dt>
+        <dd id="panel3" role="tabpanel" aria-labelledby="title3" aria-hidden="false">
+          <p>Coriander bitterleaf epazote tigernut grape catsear bunya nuts swiss chard aubergine. Quandong broccoli earthnut pea sweet pepper beetroot beet greens welsh onion chickpea artichoke pea sprouts kombu cress arugula. Zucchini kale water spinach pea sprouts spinach quandong lotus root collard greens radicchio chickweed brussels sprout gourd gram bell pepper fava bean komatsuna.</p>
+          <p>Second paragraph to test adding tabindex attribute.</p>
+        </dd>
+      </dl>
+      <dl id="myAccordion1" class="js-accordion accordion" role="tablist" aria-multiselectable="true">
+        <dt id="title1" role="tab" aria-controls="panel1" aria-selected="true" aria-expanded="true" tabindex=0>Veggies sunt bona vobis</dt>
+        <dd id="panel1" role="tabpanel" aria-labelledby="title1" aria-hidden="false">
+          <p id="p-bona">Veggies sunt <a href="#" id="bona">#bona vobis</a>, proinde vos postulo esse magis earthnut pea kohlrabi watercress epazote yarrow amaranth lettuce tatsoi pea sprouts celery salsify bell pepper sierra leone bologi peanut eggplant salad.</p>
+        </dd>
+        <dt id="title2" role="tab" aria-controls="panel2" aria-selected="true" aria-expanded="true" tabindex=-1>Coriander bitterleaf</dt>
+        <dd id="panel2" role="tabpanel" aria-labelledby="title2" aria-hidden="false">
+          <p>Coriander bitterleaf epazote tigernut grape catsear bunya nuts swiss chard aubergine. Quandong broccoli earthnut pea sweet pepper beetroot beet greens welsh onion chickpea artichoke pea sprouts kombu cress arugula. Zucchini kale water spinach pea sprouts spinach quandong lotus root collard greens radicchio chickweed brussels sprout gourd gram bell pepper fava bean komatsuna.</p>
+        </dd>
+        <dt id="title3" role="tab" aria-controls="panel3" aria-selected="true" aria-expanded="true" tabindex=-1>Coriander bitterleaf again</dt>
+        <dd id="panel3" role="tabpanel" aria-labelledby="title3" aria-hidden="false">
+          <p>Coriander bitterleaf epazote tigernut grape catsear bunya nuts swiss chard aubergine. Quandong broccoli earthnut pea sweet pepper beetroot beet greens welsh onion chickpea artichoke pea sprouts kombu cress arugula. Zucchini kale water spinach pea sprouts spinach quandong lotus root collard greens radicchio chickweed brussels sprout gourd gram bell pepper fava bean komatsuna.</p>
+          <p>Second paragraph to test adding tabindex attribute.</p>
+        </dd>
+      </dl>
+    </div>
+    <footer role="contentinfo">
+      <div id="footer">
+        <ul>
+          <li>Copyright</li>
+          <li>Terms of Service</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
